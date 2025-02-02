@@ -5,11 +5,17 @@
     flex-direction: column;
 }
 
-.ReactModal__Overlay {
-    background: rgba(0, 0, 0, 0.7) !important;
+.overlay {
+    background: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 .ReactModal__Content {
@@ -33,11 +39,14 @@
 }
 
 .button {
+position: absolute;
+    top: 10px;
+    right: 10px;
+
     border: none;
     padding: 8px 12px;
     font-size: 16px;
     border-radius: 5px;
-    text-align: end;
 }
 
 .button:hover {
@@ -46,6 +55,6 @@
 
 .author, 
 .likes {
-    color: #000;
+    color: #FFF;
     font-size: 20px;
 }

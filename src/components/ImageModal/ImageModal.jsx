@@ -10,6 +10,7 @@ const ImageModal = ({ isOpen, onClose, image }) => {
         <Modal 
             isOpen={isOpen} 
             onRequestClose={onClose} 
+            shouldCloseOnOverlayClick={true}
             contentLabel="Image Modal"
             className={styles.modal} 
             overlayClassName={styles.overlay}
