@@ -2,7 +2,7 @@ import styles from "./ImageGallery.module.css";
 import ImageCard from "../ImageCard/ImageCard";
 
 const ImageGallery = ({ images, onImageClick }) => {
-    if (!images.length) return 0;
+    if (!images.length) return null;
 
     return (
         <ul className={styles.list}>
